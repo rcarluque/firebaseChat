@@ -1,3 +1,11 @@
+button {
+  margin: 4px;
+}
+
+.sim {
+  margin: 0px;
+}
+
 .main-container{
   margin-top: 40px;
   margin-bottom: 150px;
@@ -7,9 +15,6 @@
   cursor: pointer;
 }
 
-button {
-  margin: 4px;
-}
 
 .chat-window{
   padding: 10px;
@@ -57,4 +62,28 @@ button {
 
 .fadeIn {
   animation-name: fadeIn;
+}
+
+@keyframes entrada {
+  0% { opacity: 0; height: 0;}
+  25% {opacity: 0; height: 25%;}
+  50% {height: 50%;}
+  75% {height: 75%;}
+  100% {height: 100%;}
+}
+
+.entrada {
+  animation-name: entrada;
+}
+
+@keyframes salida {
+  0% { height: 100%;}
+  25% { height: 75%;}
+  50% {height: 50%;}
+  75% {opacity: 0; height: 25%;}
+  100% {opacity: 0; height: 0;}
+}
+
+.salida {
+  animation-name: salida;
 }

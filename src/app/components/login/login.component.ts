@@ -10,6 +10,7 @@ export class LoginComponent implements OnInit {
 
   email: string;
   pass: string;
+  showUsuario = false;
   // True login, False new
   opcion: boolean = undefined;
 
